@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String Conversion</title>
+    <h3>Question 9</h3>
+    //Dispaly of the intial string
+    <p>The original string is:<span id="str"></span></p>
+    <p>The output is:<span id="str2"></span></p>
+</head>
+<body>
+    <script> 
+      //given string
+        s="++d===+f+"
+        function simplestrg(s){
+        //checking if the 1st character is +/= or not 
+            if(s[0] >='a' || s[s.lengtht-1]>='a')
+            return false;
+            else{
+         //checking for the given condition for every char of string 
+                for(i=1;i<s.length-1;i++){
+                    if(s[i]>='a'){
+                        if(s[i-1] != '+' || s[i+1] !='+')
+                        return false;
+                    }
+                }
+            }
+        }
+        document.getElementById("str").innerHTML=s;
+        document.getElementById("str2").innerHTML=simplestrg(s);
+    </script>
+    
+</body>
+</html>

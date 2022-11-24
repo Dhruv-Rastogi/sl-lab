@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Basic Price Calculator</title>
+</head>
+<body style=“background-color:blue”>
+ <h2 align="center">Bill Calculator</h2>
+ Item Name: <input type="text" id="Name"><br><br>
+ Item Price: <input type="text" id="Price"><br><br>
+ Item Quantity: <input type="text" id="Quantity"><br><br>
+ <input type="button" value="Submit" onclick="calculate()">
+ <p>The Total Price is:<span id="result"></span></p>
+ <p><input type="button" value="PayBill" onclick="popup()">
+ <script>
+ function calculate()
+ {
+ x=document.getElementById("Price").value;
+ y=document.getElementById("Quantity").value;
+ res=x*y;
+ document.getElementById("result").innerHTML=res;
+ }
+ function popup()
+ {
+ alert("The Bill is Paid!");
+ }
+ </script>
+</body>
+</html> 
